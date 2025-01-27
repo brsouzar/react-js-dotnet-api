@@ -23,6 +23,10 @@ namespace RestWithASPNETErudio.Controllers
         public IActionResult Signin([FromBody] UserVO user)
         {
             if (user == null) return BadRequest("Ivalid client request");
+            if (user == null) return BadRequest("Ivalid client request");
+            if (user == null) return BadRequest("Ivalid client request");
+            if (user == null) return BadRequest("Ivalid client request");
+            if (user == null) return BadRequest("Ivalid client request");
             var token = _loginBusiness.ValidateCredentials(user);
             if (token == null) return Unauthorized();
             return Ok(token);
